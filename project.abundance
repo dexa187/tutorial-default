@@ -10,16 +10,16 @@
     {
       "atomType": "Output",
       "name": "Output",
-      "x": 0.47159479808350446,
-      "y": 0.38035264483627207,
+      "x": 0.4681724845995894,
+      "y": 0.3677581863979849,
       "uniqueID": "id-2",
       "ioValues": []
     },
     {
       "atomType": "Molecule",
-      "name": "Molecule",
-      "x": 0.1950718685831622,
-      "y": 0.5314861460957179,
+      "name": "Molecule1",
+      "x": 0.21149897330595482,
+      "y": 0.2594458438287154,
       "uniqueID": "id-4",
       "ioValues": [],
       "topLevel": false,
@@ -27,8 +27,8 @@
         {
           "atomType": "Output",
           "name": "Output",
-          "x": 0.6584531143052704,
-          "y": 0.43576826196473556,
+          "x": 0.6105407255304587,
+          "y": 0.3602015113350126,
           "uniqueID": "id-6",
           "ioValues": []
         },
@@ -59,55 +59,6 @@
               "currentEquation": "40"
             }
           ]
-        },
-        {
-          "atomType": "Circle",
-          "name": "Circle",
-          "x": 0.21971252566735114,
-          "y": 0.5793450881612091,
-          "uniqueID": "id-15",
-          "ioValues": [
-            {
-              "name": "diameter",
-              "ioValue": 10
-            }
-          ]
-        },
-        {
-          "atomType": "Move",
-          "name": "Move",
-          "x": 0.4626967830253251,
-          "y": 0.8312342569269521,
-          "uniqueID": "id-18",
-          "ioValues": [
-            {
-              "name": "xDist",
-              "ioValue": 20,
-              "currentEquation": "20"
-            },
-            {
-              "name": "yDist",
-              "ioValue": 0
-            },
-            {
-              "name": "zDist",
-              "ioValue": 0
-            }
-          ]
-        },
-        {
-          "atomType": "Extrude",
-          "name": "Extrude",
-          "x": 0.2080766598220397,
-          "y": 0.7934508816120907,
-          "uniqueID": "id-24",
-          "ioValues": [
-            {
-              "name": "height",
-              "ioValue": 20,
-              "currentEquation": "20"
-            }
-          ]
         }
       ],
       "allConnectors": [
@@ -122,27 +73,93 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-11",
           "ap2ID": "id-6"
-        },
-        {
-          "ap1Name": "geometry",
-          "ap2Name": "geometry",
-          "ap1ID": "id-15",
-          "ap2ID": "id-24"
-        },
-        {
-          "ap1Name": "geometry",
-          "ap2Name": "geometry",
-          "ap1ID": "id-24",
-          "ap2ID": "id-18"
         }
       ],
       "fileTypeVersion": 1,
       "compiledBom": []
+    },
+    {
+      "atomType": "Molecule",
+      "name": "Molecule2",
+      "x": 0.2292950034223135,
+      "y": 0.7204030226700252,
+      "uniqueID": "id-35",
+      "ioValues": [],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "name": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-37",
+          "ioValues": []
+        },
+        {
+          "atomType": "Circle",
+          "name": "Circle",
+          "x": 0.19849418206707736,
+          "y": 0.4005037783375315,
+          "uniqueID": "id-39",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "name": "Extrude",
+          "x": 0.45379876796714574,
+          "y": 0.5516372795969773,
+          "uniqueID": "id-42",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 70,
+              "currentEquation": "70"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "name": "input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-55",
+          "ioValues": [],
+          "type": "geometry"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "geometry",
+          "ap1ID": "id-39",
+          "ap2ID": "id-42"
+        }
+      ],
+      "fileTypeVersion": 1,
+      "compiledBom": {}
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap1Name": "geometry or number",
+      "ap2Name": "input",
+      "ap1ID": "id-4",
+      "ap2ID": "id-35"
+    },
+    {
+      "ap1Name": "geometry or number",
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-35",
+      "ap2ID": "id-2"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": {},
+  "compiledBom": [],
   "filetypeVersion": 1
 }
