@@ -10,10 +10,134 @@
     {
       "atomType": "Output",
       "name": "Output",
-      "x": 0.98,
-      "y": 0.5,
+      "x": 0.47159479808350446,
+      "y": 0.38035264483627207,
       "uniqueID": "id-2",
       "ioValues": []
+    },
+    {
+      "atomType": "Molecule",
+      "name": "Molecule",
+      "x": 0.1950718685831622,
+      "y": 0.5314861460957179,
+      "uniqueID": "id-4",
+      "ioValues": [],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "name": "Output",
+          "x": 0.6584531143052704,
+          "y": 0.43576826196473556,
+          "uniqueID": "id-6",
+          "ioValues": []
+        },
+        {
+          "atomType": "Circle",
+          "name": "Circle",
+          "x": 0.22313483915126628,
+          "y": 0.4030226700251889,
+          "uniqueID": "id-8",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 20,
+              "currentEquation": "20"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "name": "Extrude",
+          "x": 0.37850787132101305,
+          "y": 0.6095717884130982,
+          "uniqueID": "id-11",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 40,
+              "currentEquation": "40"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "name": "Circle",
+          "x": 0.21971252566735114,
+          "y": 0.5793450881612091,
+          "uniqueID": "id-15",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "name": "Move",
+          "x": 0.4626967830253251,
+          "y": 0.8312342569269521,
+          "uniqueID": "id-18",
+          "ioValues": [
+            {
+              "name": "xDist",
+              "ioValue": 20,
+              "currentEquation": "20"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "name": "Extrude",
+          "x": 0.2080766598220397,
+          "y": 0.7934508816120907,
+          "uniqueID": "id-24",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 20,
+              "currentEquation": "20"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "geometry",
+          "ap1ID": "id-8",
+          "ap2ID": "id-11"
+        },
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-11",
+          "ap2ID": "id-6"
+        },
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "geometry",
+          "ap1ID": "id-15",
+          "ap2ID": "id-24"
+        },
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "geometry",
+          "ap1ID": "id-24",
+          "ap2ID": "id-18"
+        }
+      ],
+      "fileTypeVersion": 1,
+      "compiledBom": []
     }
   ],
   "allConnectors": [],
